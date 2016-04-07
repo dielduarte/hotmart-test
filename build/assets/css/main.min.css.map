@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss","main.css"],"names":[],"mappings":"AAAA,KCCC,sBDAC,ACCD,UDAC,CCCD","file":"main.min.css","sourcesContent":["body {\n  background-color: #ccc;\n  color: black;\n}\n","body {\n\tbackground-color: #ccc;\n\tcolor: black;\n}\n\n"],"sourceRoot":"/source/"}
