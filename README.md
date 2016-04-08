@@ -30,16 +30,10 @@ A task `gulp nocache` é utilizada em alguns projetos com processo de CI (contin
 
 A task encherga os scripts e css importados na index da nossa aplicação, gera um novo arquivo renomeandos com uma hash e substitui a chamada na index, burlando qualquer tipo de cache feito pelo browser do client.
 
-###Arquiterura baseada em components
+### Arquitetura baseada em components
 Adotei no teste uma arquiterura front end baseada em components, não foi usado no mesmo nenhum framework/lib javascript mas com essa arquitetura nosso template está preparado para ser integrado a qualquer lib/framework, react, angular 1.5+, vue.js entre outros...
 
-Abaixo envio duas imagens do processo de criaçao dos components baseados no layout enviado para o teste:
-
-* Esboço manual:
-
-![](README_IMAGES/manual.jpg)
-
-[abrir imagem](https://raw.githubusercontent.com/dielduarte/hotmart-test/develop/README_IMAGES/manual.jpg?token=AFaqNxN6Z5DFv0AnaZtEdLKqj4yT_QI1ks5XETZQwA%3D%3D)
+Abaixo envio uma imagem do processo de criação dos components baseados no layout enviado para o teste:
 
 * Arquitetura baseada em components
 
