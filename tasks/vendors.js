@@ -12,7 +12,16 @@ var styles = [
 ];
 
 var EXTERNAL_FONTS = [
-  //your external fonts
+  'app/assets/fonts/OpenSans-Bold.ttf',
+  'app/assets/fonts/OpenSans-BoldItalic.ttf',
+  'app/assets/fonts/OpenSans-ExtraBold.ttf',
+  'app/assets/fonts/OpenSans-ExtraBoldItalic.ttf',
+  'app/assets/fonts/OpenSans-Italic.ttf',
+  'app/assets/fonts/OpenSans-Light.ttf',
+  'app/assets/fonts/OpenSans-LightItalic.ttf',
+  'app/assets/fonts/OpenSans-Regular.ttf',
+  'app/assets/fonts/OpenSans-Semibold.ttf',
+  'app/assets/fonts/OpenSans-SemiboldItalic.ttf'
 ];
 
 gulp.task('build-vendors', ['build-vendors-css', 'build-vendors-fonts'], function () {

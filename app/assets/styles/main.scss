@@ -3,24 +3,23 @@
 */
 
 	@import "_settings/**/*";
-   
+
 
 /*
 	TOOLS
-*/ 
+*/
 	//Mixins
 	@import "_tools/mixins/*";
-	
+
 	// Placeholders
 	@import "_tools/placeholders/*";
-	
 
 
 /*
 	GENERIC
 */
 
-	@import "_generic/**/*"; 
+	@import "_generic/**/*";
 
 /*
 	BASE
@@ -40,4 +39,5 @@
 /*
 	TRUMPS
 */
-	@import "_trumps/**/*"; 
+	@import "_trumps/**/*";
+

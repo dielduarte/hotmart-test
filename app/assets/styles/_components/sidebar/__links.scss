@@ -1,0 +1,58 @@
+.sidebar__links {
+  li {
+    position: relative;
+    padding: 15px;
+    color: $grey-dark;
+    text-transform: uppercase;
+    @include transition-property(all);
+    @include transition-duration(.3s);
+    border-left: 0 solid transparent;
+    border-bottom: inset 1px $grey;
+
+    &:hover {
+      border-left: 6px solid $red;
+      color: $red;
+      cursor: pointer;
+
+      .hot-icon-user { background-position: -40px -82px; }
+      .hot-icon-cart { background-position: -68px -5px; }
+      .hot-icon-dolar { background-position: -25px -31px; }
+      .hot-icon-money { background-position: -5px -62px; }
+      .hot-icon-light-arrow { background-position: -95px -24px; }
+    }
+
+  }
+
+  .links__icon {
+    display: inline-block;
+    min-width: 48px;
+    text-align: left;
+
+    i {
+      top: 3px;
+      position: relative;
+    }
+
+    .links__iconplus {
+      color: $red;
+      padding: 0 4px;
+      border: 2px solid $grey;
+      @include transition-property(all);
+      @include transition-duration(.3s);
+
+      &:hover { border: 2px solid $red; }
+    }
+  }
+
+  .hot-icon-light-arrow {
+    position: absolute;
+    right: 15px;
+    top: 25px;
+  }
+
+  &--hotlinks {
+    li {
+      &:hover { border-left: none; }
+    }
+  }
+}

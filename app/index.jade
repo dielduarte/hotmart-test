@@ -8,6 +8,9 @@ html(ng-app='app')
     link(rel='stylesheet', type='text/css', href='assets/css/vendors.min.css')
     link(rel='stylesheet', type='text/css', href='assets/css/main.min.css')
   body
+    include ./components/sidebar/sidebar
+    include ./components/header/header
+    include ./components/paginate/paginate
 
     // JS
     script(src='scripts/vendors.min.js')

@@ -8,6 +8,8 @@ var cmq = require('gulp-merge-media-queries');
 var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
 var plumber = require('gulp-plumber');
+var compass = require('gulp-compass');
+var  path = require('path');
 
 gulp.task('css', function () {
   gulp.src('./app/assets/styles/main.scss')
@@ -16,8 +18,11 @@ gulp.task('css', function () {
       extensions: ['.scss', '.css', '.sass']
     }))
     .pipe(sourcemaps.init())
-    .pipe(sass.sync().on('error', function (error) {
-      console.log(error);
+    .pipe(compass({
+      css: 'build/assets/css',
+      sass: 'app/assets/styles',
+      image: 'app/assets/images',
+      fonts: 'app/assets/fonts'
     }))
     .pipe(autoprefixer({
       browsers: ['not ie <= 8'],
