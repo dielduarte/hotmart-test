@@ -2,7 +2,8 @@
   width: 100%;
   max-width: 220px;
   background: $grey-light;
-  border-left: inset 1px $grey;
+  border-left: 1px solid $grey;
   border-right: inset 1px $grey;
   font-size: 14px;
+  position: fixed;
 }

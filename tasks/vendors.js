@@ -9,6 +9,7 @@ var files = [
 ];
 
 var styles = [
+  'node_modules/flexboxgrid/css/flexboxgrid.min.css'
 ];
 
 var EXTERNAL_FONTS = [

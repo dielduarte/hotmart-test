@@ -1,0 +1,45 @@
+.chat__item__count-messages {
+  float: right;
+  width: 36px;
+  height: 70px;
+  background-color: $grey-dark;
+  border-radius: 5px;
+  color: $white;
+  font-size: 12px;
+  @include transition-property(all);
+  @include transition-duration(.2s);
+
+  &:hover {
+    background-color: $red;
+
+    .count-messages__count { background-color: $red; }
+  }
+}
+
+  .count-messages__count {
+    position: relative;
+    left: -14px;
+    top: 21px;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    background-color:  $grey-dark;
+    border-radius: 50%;
+    text-align: center;
+    @include transition-property(all);
+    @include transition-duration(.2s);
+  }
+
+  .count__arrow-icon {
+      display: inline-block;
+      position: relative;
+      z-index: 9;
+      left: 15px;
+      top: -1px;
+      font-size: 15px;
+      color: #fff;
+
+    &:after {
+      content:">"
+    }
+  }

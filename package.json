@@ -41,5 +41,8 @@
     "minimist": "*",
     "node-sass": "3.3.3",
     "require-dir": "~0.1.0"
+  },
+  "dependencies": {
+    "flexboxgrid": "^6.3.0"
   }
 }

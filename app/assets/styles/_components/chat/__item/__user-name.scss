@@ -1,0 +1,14 @@
+.chat__item__user-name {
+  color: $red;
+  font-size: 14px;
+  font-weight: bold;
+
+  &:after {
+    content: ".";
+    margin-left: 10px;
+    margin-right: 10px;
+    top: -4px;
+    position: relative;
+    color: $black;
+  }
+}

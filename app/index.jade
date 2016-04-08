@@ -8,9 +8,18 @@ html(ng-app='app')
     link(rel='stylesheet', type='text/css', href='assets/css/vendors.min.css')
     link(rel='stylesheet', type='text/css', href='assets/css/main.min.css')
   body
-    include ./components/sidebar/sidebar
-    include ./components/header/header
-    include ./components/paginate/paginate
+    .row.content
+      .col-md-3
+        include ./components/sidebar/sidebar
+      .col-md-8
+        .row
+          include ./components/header/header
+        .row
+          .col-md-offset-8
+            include ./components/actions-bar/actions-bar
+        .row
+          include ./components/chat/chat
+        .row
+          .col-md-2.col-md-offset-5
+            include ./components/paginate/paginate
 
-    // JS
-    script(src='scripts/vendors.min.js')
