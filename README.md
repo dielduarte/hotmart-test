@@ -25,6 +25,8 @@ GULP - task runner
 
 NPM - packages managers
 
+GIT FLOW
+
 ###gulp nocache
 A task `gulp nocache` é utilizada em alguns projetos com processo de CI (continuos integration) para burlar o cache quando novas features entram em produção.
 
