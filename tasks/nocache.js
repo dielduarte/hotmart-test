@@ -9,26 +9,13 @@ gulp.task('nocache-css', function () {
     .pipe(gulp.dest('build/assets/css/'));
 });
 
-gulp.task('nocache-js', function () {
-  return gulp.src('build/scripts/app.min.js')
-    .pipe(cachebust.resources())
-    .pipe(gulp.dest('build/scripts/'));
-});
-
-gulp.task('nocache-vendors-js', function () {
-  return gulp.src('build/scripts/vendors.min.js')
-    .pipe(cachebust.resources())
-    .pipe(gulp.dest('build/scripts/'));
-});
-
-
 gulp.task('nocache-vendors-css', function () {
-  return gulp.src('build/css/vendors.min.css')
+  return gulp.src('build/assets/css/vendors.min.css')
     .pipe(cachebust.resources())
     .pipe(gulp.dest('build/scripts/'));
 });
 
-gulp.task('nocache', ['nocache-css', 'nocache-js', 'nocache-vendors-js', 'nocache-vendors-css'], function () {
+gulp.task('nocache', ['nocache-css', 'nocache-vendors-css'], function () {
   return gulp.src('build/index.html')
     .pipe(cachebust.references())
     .pipe(gulp.dest('build/'));
