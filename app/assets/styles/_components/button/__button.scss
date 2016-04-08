@@ -1,0 +1,10 @@
+.button {
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  line-height: 33px;
+  border-radius: 2px;
+  background-color: $red;
+  text-align: center;
+  @include box-shadow($grey 0 3px 8px);
+}

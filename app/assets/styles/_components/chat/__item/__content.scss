@@ -1,0 +1,19 @@
+.chat__item__content {
+  display: inline-block;
+  width: 97%;
+  height: 70px;
+  background-color: $grey-light;
+  border-radius: 35px 5px 5px 35px;
+  @include transition-property(all);
+  @include transition-duration(.2s);
+
+    &:hover {
+      background-color: $grey;
+      cursor: pointer;
+
+      .chat__item__count-messages,
+      .count-messages__count { background-color: $red; }
+    }
+  }
+
+
